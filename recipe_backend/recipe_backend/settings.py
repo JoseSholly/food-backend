@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # New apps
     'recipes',
     'rest_framework',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
