@@ -83,7 +83,26 @@ class RecipeViewSet(viewsets.ModelViewSet):
                 },
                 status=status.HTTP_400_BAD_REQUEST
             )
-   
+    def destroy(self, request, *args, **kwargs):
+        try:
+            instance = self.get_object()
+            self.perform_destroy(instance)
+
+            return Response(
+                {
+                    'status': 'success',
+                    'message': 'Recipe deleted successfully'
+                },
+                status=status.HTTP_204_NO_CONTENT  # No content status code for successful delete
+            )
+        except Exception as e:
+            return Response(
+                {
+                    'status': 'error',
+                    'message': str(e)
+                },
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
     def perform_update(self, serializer):
         return serializer.save()
