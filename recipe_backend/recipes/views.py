@@ -1,44 +1,75 @@
 from django.shortcuts import render
-
-# Create your views here.
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import viewsets, status
 from .models import Recipe
-from .serializers import RecipeSerializer
-
-# class RecipeListCreateView(generics.ListCreateAPIView):
-#     queryset = Recipe.objects.all()
-#     serializer_class = RecipeSerializer
-#     permission_classes = [IsAuthenticated]
-
-# class RecipeDetailView(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Recipe.objects.all()
-#     serializer_class = RecipeSerializer
-#     permission_classes = [IsAuthenticated]
-
-
-from rest_framework import viewsets
-from .models import Recipe
-from .serializers import RecipeSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
+from .serializers import RecipeCreateSerializer, RecipeDetailSerializer
+
 
 class RecipeViewSet(viewsets.ModelViewSet):
     queryset = Recipe.objects.all()
-    serializer_class = RecipeSerializer
+    
+    def get_serializer_class(self):
+        if self.action in ['create', 'update', 'partial_update']:
+            return RecipeCreateSerializer
+        return RecipeDetailSerializer
 
-    def get_queryset(self):
-        queryset = Recipe.objects.all()
-        cuisine = self.request.query_params.get('cuisine', None)
-        course = self.request.query_params.get('course', None)
-        
-        if cuisine:
-            queryset = queryset.filter(cuisine=cuisine)
-        if course:
-            queryset = queryset.filter(course=course)
+    def create(self, request, *args, **kwargs):
+        try:
+            serializer = self.get_serializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
+            recipe = self.perform_create(serializer)
+            # Use DetailSerializer for the response
+            response_serializer = RecipeDetailSerializer(recipe)
             
-        return queryset
+            return Response(
+                {
+                    'status': 'success',
+                    'message': 'Recipe created successfully',
+                    'data': response_serializer.data
+                },
+                status=status.HTTP_201_CREATED
+            )
+        except Exception as e:
+            return Response(
+                {
+                    'status': 'error',
+                    'message': str(e)
+                },
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    def perform_create(self, serializer):
+        return serializer.save()
+
+    def update(self, request, *args, **kwargs):
+        try:
+            partial = kwargs.pop('partial', False)
+            instance = self.get_object()
+            serializer = self.get_serializer(instance, data=request.data, partial=partial)
+            serializer.is_valid(raise_exception=True)
+            recipe = self.perform_update(serializer)
+            response_serializer = RecipeDetailSerializer(recipe)
+            
+            return Response(
+                {
+                    'status': 'success',
+                    'message': 'Recipe updated successfully',
+                    'data': response_serializer.data
+                }
+            )
+        except Exception as e:
+            return Response(
+                {
+                    'status': 'error',
+                    'message': str(e)
+                },
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    def perform_update(self, serializer):
+        return serializer.save()
 
 @api_view(['GET'])
 def search_recipes(request):
