@@ -16,6 +16,18 @@ class RecipeViewSet(viewsets.ModelViewSet):
         if self.action in ['create', 'update', 'partial_update']:
             return RecipeCreateSerializer
         return RecipeDetailSerializer
+    
+    def get_queryset(self):
+        queryset = Recipe.objects.all()
+        cuisine = self.request.query_params.get('cuisine', None)
+        course = self.request.query_params.get('course', None)
+        
+        if cuisine:
+            queryset = queryset.filter(cuisine__icontains=cuisine)
+        if course:
+            queryset = queryset.filter(course__icontains=course)
+            
+        return queryset
 
     def create(self, request, *args, **kwargs):
         try:
@@ -107,6 +119,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
     def perform_update(self, serializer):
         return serializer.save()
 
+
+
 # @api_view(['GET'])
 # def search_recipes(request):
 #     query = request.query_params.get('q', '')
@@ -122,7 +136,7 @@ class SearchRecipesView(generics.GenericAPIView):
     def get(self, request, *args, **kwargs):
         query = request.query_params.get('q', '')
         if query:
-            recipes = Recipe.objects.filter(food_name__icontains=query)
+            recipes = Recipe.objects.filter(food_name__icontains=query,)
             serializer = self.get_serializer(recipes, many=True)
             return Response(serializer.data)
         return Response([])
