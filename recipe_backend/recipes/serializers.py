@@ -7,12 +7,13 @@ class IngredientSerializer(serializers.ModelSerializer):
         fields = ['name', 'quantity']
 
 class RecipeCreateSerializer(serializers.ModelSerializer):
-    ingredients = serializers.ListField(
-        child=serializers.DictField(
-            child=serializers.CharField()
-        ),
-        write_only=True
-    )
+    # ingredients = serializers.ListField(
+    #     child=serializers.DictField(
+    #         child=serializers.CharField()
+    #     ),
+    #     write_only=True
+    # )
+    ingredients = IngredientSerializer(many=True)
 
     class Meta:
         model = Recipe
@@ -33,6 +34,7 @@ class RecipeCreateSerializer(serializers.ModelSerializer):
             recipe.ingredients.add(ingredient)
         
         return recipe
+        
 
 class RecipeDetailSerializer(serializers.ModelSerializer):
     ingredients = IngredientSerializer(many=True, read_only=True)

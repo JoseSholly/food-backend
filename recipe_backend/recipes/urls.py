@@ -9,11 +9,13 @@ from . import views
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import views
+from .views import SearchRecipesView
 
 router = DefaultRouter()
 router.register(r'recipes', views.RecipeViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('search/', views.search_recipes, name='search-recipes'),
+    # path('search/', views.search_recipes, name='search-recipes'),
+    path('search/', SearchRecipesView.as_view(), name='search-recipes'),
 ]
