@@ -1,4 +1,5 @@
 from django.db import models
+from .utils import *
 
 # Create your models here.
 class Ingredient(models.Model):
@@ -23,6 +24,8 @@ class Recipe(models.Model):
     calories = models.IntegerField(null=True, blank=True)
     ingredients = models.ManyToManyField(Ingredient)
     preparation_instructions = models.TextField()
+    image = models.ImageField(upload_to=recipe_image_path, null=True, blank=True)
 
     def __str__(self):
         return self.food_name
+    
