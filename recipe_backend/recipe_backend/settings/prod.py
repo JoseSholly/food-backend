@@ -9,9 +9,7 @@ database_url= os.getenv("DATABASE_URL")
 
 DATABASES["default"] = dj_database_url.parse(database_url)
 
-ALLOWED_HOSTS = ['127.0.0.1','enigma-recipe.onrender.com']
-
-
+ALLOWED_HOSTS = ['enigma-recipe.onrender.com']
 
 STATIC_URL = '/static/'
 
