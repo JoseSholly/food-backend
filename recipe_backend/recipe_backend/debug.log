@@ -3698,3 +3698,1151 @@ File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\co
 File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1729248829.3801696
 File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1729248830.3523874
 File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1729248829.3735185
+File C:\Python39\Lib\encodings\idna.py first seen with mtime 1630352124.0
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1729248850.6943896
+File C:\Python39\Lib\stringprep.py first seen with mtime 1630352126.0
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1729248839.92924
+File C:\Users\USER\Documents\Git\recipe_backend\recipe_backend\recipe_backend\wsgi.py first seen with mtime 1730564296.8619678
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1729248852.8637135
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1729248835.5474246
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1729248835.552423
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1729248839.8918324
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1729248835.549427
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'name' in template 'admin/filter.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in {'selected': True, 'query_string': '?', 'display': 'All'}
+File C:\Python39\Lib\importlib\_common.py first seen with mtime 1630352124.0
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1729248835.5324242
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\_brotli.cp39-win_amd64.pyd first seen with mtime 1730565354.317458
+File C:\Python39\Lib\textwrap.py first seen with mtime 1630352126.0
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1729248802.3664076
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\whitenoise\compress.py first seen with mtime 1730565354.646174
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\tzdata\__init__.py first seen with mtime 1729248802.0987704
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1729248810.2481754
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1729248810.2481754
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\whitenoise\storage.py first seen with mtime 1730565354.646174
+File C:\Python39\Lib\importlib\resources.py first seen with mtime 1630352124.0
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\brotli.py first seen with mtime 1730565354.317458
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\django\template\context_processors.py first seen with mtime 1729248853.563522
+Exception while resolving variable 'name' in template 'admin/filter.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in {'selected': True, 'query_string': '?', 'display': 'All'}
+Exception while resolving variable 'sorted' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [sorted] in {'text': '<input type="checkbox" id="action-toggle">', 'class_attrib': ' class="action-checkbox-column"', 'sortable': False}
+Exception while resolving variable 'filter_input_length' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RecipeAdmin' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RecipeAdmin' object has no attribute 'filter_input_length'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'filter_input_length'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [filter_input_length] in <RecipeAdmin: model=Recipe site=AdminSite(name='admin')>
+"GET /admin/recipes/recipe/ HTTP/1.1" 200 24737
+"GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+"GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+"GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+"GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+"GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+"GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+Exception while resolving variable 'script_url' in template 'drf_spectacular/swagger_ui.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'script_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 886, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+AttributeError: type object 'RequestContext' has no attribute 'script_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'script_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [script_url] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000279A3F63D30>>, 'request': <rest_framework.request.Request: GET '/'>, 'user': <SimpleLazyObject: <User: jose_sholly>>, 'perms': PermWrapper(<SimpleLazyObject: <User: jose_sholly>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'title': '', 'swagger_ui_css': 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@latest/swagger-ui.css', 'swagger_ui_bundle': 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@latest/swagger-ui-bundle.js', 'swagger_ui_standalone': 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@latest/swagger-ui-standalone-preset.js', 'favicon_href': 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@latest/favicon-32x32.png', 'schema_url': '/api/v1/schema/', 'settings': '{\n  "deepLinking": true\n}', 'oauth2_config': '{}', 'template_name_js': 'drf_spectacular/swagger_ui.js', 'csrf_header_name': 'X-CSRFTOKEN', 'schema_auth_names': '[]'}, {'block': <Block Node: body. Contents: [<TextNode: '\n    <div id="swagger-ui"'>, <Variable Node: swagger_ui_bundle>, <TextNode: '"></script>\n    <script s'>, <Variable Node: swagger_ui_standalone>, <TextNode: '"></script>\n    '>, <IfNode>, <TextNode: '\n    '>]>}]
+"GET / HTTP/1.1" 200 4643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+"GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+"GET /api/v1/schema/ HTTP/1.1" 200 23996
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\drf_spectacular\hooks.py first seen with mtime 1729251640.938667
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\rest_framework\authtoken\serializers.py first seen with mtime 1729249087.122408
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\rest_framework_simplejwt\serializers.py first seen with mtime 1729249115.4725077
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\rest_framework\authtoken\models.py first seen with mtime 1729249087.1204076
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\rest_framework\authtoken\views.py first seen with mtime 1729249087.12441
+File C:\Users\USER\Documents\Git\recipe_backend\venv\Lib\site-packages\rest_framework\authtoken\__init__.py first seen with mtime 1729249087.1154082
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'is_inline' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Fieldset' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Fieldset' object has no attribute 'is_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_inline] in <django.contrib.admin.helpers.Fieldset object at 0x00000279A4145880>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EB80>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EB50>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EAC0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414E700>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EAC0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EAC0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EB50>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EB50>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414EB50>
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'name' in template 'admin/filter.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in {'selected': True, 'query_string': '?', 'display': 'All'}
+Exception while resolving variable 'name' in template 'admin/filter.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in {'selected': True, 'query_string': '?', 'display': 'All'}
+Exception while resolving variable 'sorted' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'sorted'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [sorted] in {'text': '<input type="checkbox" id="action-toggle">', 'class_attrib': ' class="action-checkbox-column"', 'sortable': False}
+Exception while resolving variable 'filter_input_length' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RecipeAdmin' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RecipeAdmin' object has no attribute 'filter_input_length'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'filter_input_length'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [filter_input_length] in <RecipeAdmin: model=Recipe site=AdminSite(name='admin')>
+- Broken pipe from ('127.0.0.1', 60671)
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'dark_mode_theme' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+KeyError: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'dark_mode_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [dark_mode_theme] in {'raw': {'navbar_small_text': False, 'footer_small_text': False, 'body_small_text': False, 'brand_small_text': False, 'brand_colour': False, 'accent': 'accent-primary', 'navbar': 'navbar-white navbar-light', 'no_navbar_border': False, 'navbar_fixed': False, 'layout_boxed': False, 'footer_fixed': False, 'sidebar_fixed': False, 'sidebar': 'sidebar-dark-primary', 'sidebar_nav_small_text': False, 'sidebar_disable_expand': False, 'sidebar_nav_child_indent': False, 'sidebar_nav_compact_style': False, 'sidebar_nav_legacy_style': False, 'sidebar_nav_flat_style': False, 'theme': 'default', 'dark_mode_theme': None, 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}, 'theme': {'name': 'default', 'src': '/static/vendor/bootswatch/default/bootstrap.min.css'}, 'sidebar_classes': 'sidebar-dark-primary', 'navbar_classes': 'navbar-white navbar-light', 'body_classes': 'accent-primary theme-default', 'actions_classes': '', 'sidebar_list_classes': '', 'brand_classes': '', 'footer_classes': '', 'button_classes': {'primary': 'btn-primary', 'secondary': 'btn-secondary', 'info': 'btn-info', 'warning': 'btn-warning', 'danger': 'btn-danger', 'success': 'btn-success'}}
+Exception while resolving variable 'is_inline' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Fieldset' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'Fieldset' object has no attribute 'is_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_inline] in <django.contrib.admin.helpers.Fieldset object at 0x00000279A4157550>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9520>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9700>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9DF0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9700>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9DF0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9700>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A40C9DF0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A41577F0>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A4157C40>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414E700>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A414E1C0>
+- Broken pipe from ('127.0.0.1', 60675)
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A4126E50>
+Exception while resolving variable 'is_checkcard' in template 'admin/change_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'AdminField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'AdminField' object has no attribute 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_checkcard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Git\recipe_backend\venv\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_checkcard] in <django.contrib.admin.helpers.AdminField object at 0x00000279A41269A0>
+"GET /admin/recipes/recipe/8/change/ HTTP/1.1" 200 33129
+"GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+"GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+"GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+"GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+"GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+"GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
