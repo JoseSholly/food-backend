@@ -9,7 +9,7 @@ database_url= os.getenv("DATABASE_URL")
 
 DATABASES["default"] = dj_database_url.parse(database_url)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['enigma-recipe.onrender.com',]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME','enigma-recipe.onrender.com' )
 
