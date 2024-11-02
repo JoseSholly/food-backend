@@ -9,7 +9,12 @@ database_url= os.getenv("DATABASE_URL")
 
 DATABASES["default"] = dj_database_url.parse(database_url)
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS=['127.0.0.1', 'localhost']
+
+RENDER_EXTERNAL_HOSTNAME= os.getenv("RENDER_EXTERNAL_HOSTNAME")
+
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 STATIC_URL = '/static/'
 
@@ -25,3 +30,34 @@ if not DEBUG:
     WHITENOISE_USE_FINDERS = True
     WHITENOISE_COMPRESS = True
     WHITENOISE_MANIFEST_STRICT = True 
+
+SESSION_COOKIE_SECURE= True
+
+CSRF_COOKIE_SECURE= True
+
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', '').split(",")
+
+CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS= os.getenv("CSRF_TRUSTED_ORIGINS", '').split(",")
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'debug.log',  # Change the path as needed
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
