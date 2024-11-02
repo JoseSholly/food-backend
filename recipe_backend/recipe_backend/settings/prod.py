@@ -11,10 +11,10 @@ DATABASES["default"] = dj_database_url.parse(database_url)
 
 ALLOWED_HOSTS=['127.0.0.1', 'localhost']
 
-RENDER_EXTERNAL_HOSTNAME= os.getenv("RENDER_EXTERNAL_HOSTNAME")
+allowed_hosts= os.getenv("RENDER_EXTERNAL_HOSTNAME")
 
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+if allowed_hosts:
+    ALLOWED_HOSTS.append(ALLOWED_HOSTS)
 
 STATIC_URL = '/static/'
 
