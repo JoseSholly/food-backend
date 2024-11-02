@@ -9,12 +9,13 @@ database_url= os.getenv("DATABASE_URL")
 
 DATABASES["default"] = dj_database_url.parse(database_url)
 
-ALLOWED_HOSTS=['127.0.0.1', 'localhost', 'enigma-recipe.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'enigma-recipe.onrender.com']
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
+RENDER_EXTERNAL_HOSTNAME = os.getenv('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
 
 
 STATIC_URL = '/static/'
