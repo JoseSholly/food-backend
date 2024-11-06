@@ -7,6 +7,13 @@ MOOD_CHOICES = [
         ('relaxed', 'Relaxed'),
     ]
 
+WEATHER_CHOICES = [
+        ('sunny', 'Sunny'),
+        ('rainy', 'Rainy'),
+        ('cloudy', 'Cloudy'),
+    ]
+    
+  
 def recipe_image_path(instance, filename):
     # Extract file extension from the original filename
     ext = filename.split('.')[-1]
