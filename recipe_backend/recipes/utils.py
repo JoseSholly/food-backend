@@ -1,6 +1,12 @@
 import os
 from django.db import models
 
+MOOD_CHOICES = [
+        ('happy', 'Happy'),
+        ('stressed', 'Stressed'),
+        ('relaxed', 'Relaxed'),
+    ]
+
 def recipe_image_path(instance, filename):
     # Extract file extension from the original filename
     ext = filename.split('.')[-1]
