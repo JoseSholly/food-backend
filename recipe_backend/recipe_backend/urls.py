@@ -21,17 +21,35 @@ from django.urls import path, re_path
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from django.conf.urls.static import static
 from django.conf import settings
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework.schemas import get_schema_view as get_restframe_work_schema
 
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Recipe API",
+        default_version="v1",
+        description="This API provides endpoints for managing recipes, ingredients, and related operations.",
+        terms_of_service="https://www.example.com/terms/",
+        contact=openapi.Contact(email="contact@example.com"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('recipes.urls')),
     
-    path('api/v1/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('api/v1/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('api/v1/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+
+    # Documentation Urls
+    path("api-schema/", get_restframe_work_schema(title="API Schema", description="Guide for the Inverter Power REST API"), name="api_schema"),
+   path('api/v1/docs/swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+   path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+   path('api/v1/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+   path('api/v1/redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
