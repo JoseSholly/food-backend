@@ -17,6 +17,13 @@ ENERGY_CHOICES = [
         ('medium', 'Medium'),
         ('low', 'Low'),
     ]
+
+HUNGER_CHOICES = [
+        ('snack', 'Snack'),
+        ('meal', 'Meal'),
+        ('full', 'Full'),
+    ]
+
   
 def recipe_image_path(instance, filename):
     # Extract file extension from the original filename

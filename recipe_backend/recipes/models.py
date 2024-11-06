@@ -1,5 +1,5 @@
 from django.db import models
-from .utils import recipe_image_path, MOOD_CHOICES, WEATHER_CHOICES, ENERGY_CHOICES
+from .utils import recipe_image_path, MOOD_CHOICES, WEATHER_CHOICES, ENERGY_CHOICES, HUNGER_CHOICES
 
 # Create your models here.
 class Ingredient(models.Model):
@@ -28,6 +28,8 @@ class Recipe(models.Model):
     mood = models.CharField(max_length=20, choices=MOOD_CHOICES, default='happy')
     weather = models.CharField(max_length=20, choices=WEATHER_CHOICES, default='sunny')
     energy = models.CharField(max_length=20, choices=ENERGY_CHOICES, default='low')
+    hunger= models.CharField(max_length=20, choices=HUNGER_CHOICES, default='snack')
+
     def __str__(self):
         return self.food_name
     
