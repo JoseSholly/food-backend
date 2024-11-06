@@ -12,7 +12,11 @@ WEATHER_CHOICES = [
         ('rainy', 'Rainy'),
         ('cloudy', 'Cloudy'),
     ]
-    
+ENERGY_CHOICES = [
+        ('high', 'High'),
+        ('medium', 'Medium'),
+        ('low', 'Low'),
+    ]
   
 def recipe_image_path(instance, filename):
     # Extract file extension from the original filename

@@ -17,7 +17,7 @@ class RecipeCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Recipe
-        fields = ['id', 'food_name','image','mood','weather','preparation_time', 'cooking_time', 
+        fields = ['id', 'food_name','image','mood','weather','energy','preparation_time', 'cooking_time', 
                  'total_time', 'course', 'cuisine', 'servings', 'calories',
                  'ingredients', 'preparation_instructions']
 
@@ -41,6 +41,6 @@ class RecipeDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Recipe
-        fields = ['id', 'food_name','image','mood','weather','preparation_time', 'cooking_time', 
+        fields = ['id', 'food_name','image','mood','weather','energy','preparation_time','cooking_time', 
                  'total_time', 'course', 'cuisine', 'servings', 'calories',
                  'ingredients', 'preparation_instructions' ]
