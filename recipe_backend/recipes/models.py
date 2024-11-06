@@ -1,5 +1,6 @@
 from django.db import models
-from .utils import recipe_image_path, MOOD_CHOICES, WEATHER_CHOICES, ENERGY_CHOICES, HUNGER_CHOICES, BUDGET_CHOICES
+from .utils import recipe_image_path, MOOD_CHOICES, WEATHER_CHOICES, ENERGY_CHOICES, HUNGER_CHOICES, BUDGET_CHOICES, DIETARY_CHOICES, ALLERGY_CHOICES
+from multiselectfield import MultiSelectField
 
 # Create your models here.
 class Ingredient(models.Model):
@@ -30,6 +31,8 @@ class Recipe(models.Model):
     energy = models.CharField(max_length=20, choices=ENERGY_CHOICES, default='low')
     hunger= models.CharField(max_length=20, choices=HUNGER_CHOICES, default='snack')
     budget = models.CharField(max_length=20, choices=BUDGET_CHOICES, default='low')
+    dietary = MultiSelectField(choices=DIETARY_CHOICES, blank=True)
+    allergies = MultiSelectField(choices=ALLERGY_CHOICES, blank=True)
 
     def __str__(self):
         return self.food_name

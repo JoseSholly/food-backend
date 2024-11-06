@@ -30,6 +30,19 @@ BUDGET_CHOICES = [
         ('high', 'High'),
         ('very high', 'Very High'),
     ]
+DIETARY_CHOICES = (
+        ('vegetarian', 'Vegetarian'),
+        ('vegan', 'Vegan'),
+        ('gluten-free', 'Gluten-Free'),
+        ('dairy-free', 'Dairy-Free'),
+    )
+    
+ALLERGY_CHOICES = (
+        ('nuts', 'Nuts'),
+        ('dairy', 'Dairy'),
+        ('eggs', 'Eggs'),
+        ('soy', 'Soy'),
+    )
 
 
   
