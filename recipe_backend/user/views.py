@@ -6,22 +6,23 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
 from django.contrib.auth import authenticate
 
-User= get_user_model()
+User = get_user_model()
+
 # User Registration View
 class CreateUserView(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        username = request.data.get('username')
+        email = request.data.get('email')
         password = request.data.get('password')
 
-        if not username or not password:
-            return Response({"error": "username and password are required"}, status=status.HTTP_400_BAD_REQUEST)
+        if not email or not password:
+            return Response({"error": "email and password are required"}, status=status.HTTP_400_BAD_REQUEST)
 
-        if User.objects.filter(username=username).exists():
-            return Response({"error": "username already exists"}, status=status.HTTP_400_BAD_REQUEST)
+        if User.objects.filter(email=email).exists():
+            return Response({"error": "email already exists"}, status=status.HTTP_400_BAD_REQUEST)
 
-        user = User.objects.create_user(username=username, password=password)
+        user = User.objects.create_user(email=email, password=password)
         # Create a token for the user (if using TokenAuthentication)
         token, _ = Token.objects.get_or_create(user=user)
         return Response({"message": "User created successfully", "token": token.key}, status=status.HTTP_201_CREATED)
@@ -31,10 +32,10 @@ class LoginView(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        username = request.data.get('username')
+        email = request.data.get('email')
         password = request.data.get('password')
 
-        user = authenticate(username=username, password=password)
+        user = authenticate(email=email, password=password)
         if not user:
             return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
