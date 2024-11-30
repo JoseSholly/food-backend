@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
+from .managers import CustomUserManager
 
 
 GENDER = [
@@ -13,6 +14,7 @@ GENDER = [
 class User(AbstractUser):
 
     email = models.EmailField(_('email address'), unique=True, )
+    username = models.CharField(max_length=150, blank=True, null=True, unique=False)
     bio = models.TextField(max_length=500, blank=True)
     profile_picture = models.ImageField(
         upload_to='profile_pics/', 
@@ -45,7 +47,9 @@ class User(AbstractUser):
     
     # Override the default username field to use email for authentication
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+    REQUIRED_FIELDS = []
+
+    objects = CustomUserManager()
     
     def __str__(self):
         return self.email
