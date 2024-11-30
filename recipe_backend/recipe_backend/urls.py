@@ -24,6 +24,11 @@ from django.conf import settings
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework.schemas import get_schema_view as get_restframe_work_schema
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+    TokenVerifyView,
+)
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -46,10 +51,13 @@ urlpatterns = [
 
     # Documentation Urls
     path("api-schema/", get_restframe_work_schema(title="API Schema", description="Guide for the Inverter Power REST API"), name="api_schema"),
-   path('api/v1/docs/swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-   path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-   path('api/v1/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-   path('api/v1/redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('api/v1/docs/swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/v1/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/v1/redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+
+    #  Token Authentication
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
