@@ -10,7 +10,7 @@ GENDER = [
     ("Female", "Female"),
 
 ]
-class CustomUser(AbstractUser):
+class User(AbstractUser):
 
     email = models.EmailField(_('email address'), unique=True, )
     bio = models.TextField(max_length=500, blank=True)
@@ -21,7 +21,7 @@ class CustomUser(AbstractUser):
         help_text=_("The profile picture of the user.")
     )
     date_of_birth = models.DateField(null=True, blank=True, help_text=_("Date of birth of user"))
-    gender = models.CharField(choices= GENDER, max_length=10,default=None, help_text=_("The gender of user"))
+    gender = models.CharField(choices= GENDER, max_length=10,null=True, default=None, help_text=_("The gender of user"))
 
     is_recipe_creator = models.BooleanField(default=False, help_text= _("Designates if user is allowed to create recipe"))
 
@@ -45,7 +45,7 @@ class CustomUser(AbstractUser):
     
     # Override the default username field to use email for authentication
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'first_name' 'last_name']
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
     
     def __str__(self):
         return self.email
