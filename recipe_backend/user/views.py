@@ -6,9 +6,11 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
 from django.contrib.auth import authenticate
 
-User = get_user_model()
+from rest_framework_simplejwt.tokens import RefreshToken
 
-# User Registration View
+User = get_user_model()
+"""
+# User Registration View: Django built auth-system
 class CreateUserView(APIView):
     permission_classes = [AllowAny]
 
@@ -27,7 +29,7 @@ class CreateUserView(APIView):
         token, _ = Token.objects.get_or_create(user=user)
         return Response({"message": "User created successfully", "token": token.key}, status=status.HTTP_201_CREATED)
 
-# Login View
+# Login View: Django built auth-system
 class LoginView(APIView):
     permission_classes = [AllowAny]
 
@@ -43,11 +45,24 @@ class LoginView(APIView):
         token, _ = Token.objects.get_or_create(user=user)
         return Response({"message": "Login successful", "token": token.key}, status=status.HTTP_200_OK)
 
-# Logout View
+# Logout View: Django built auth-system
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
         # Delete the user's token to log them out (if using TokenAuthentication)
         request.user.auth_token.delete()
-        return Response({"message": "Logged out successfully"}, status=status.HTTP_200_OK)
+        return Response({"message": "Logged out successfully"}, status=status.HTTP_200_OK)"""
+
+
+
+class LogoutView(APIView):
+    permission_classes = [IsAuthenticated] 
+    def post(self, request):
+        refresh_token = request.data.get('refresh')
+        try:
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+            return Response({"detail": "Logged out successfully"}, status=status.HTTP_200_OK)
+        except Exception:
+            return Response({"error": "Invalid token"}, status=status.HTTP_400_BAD_REQUEST)
