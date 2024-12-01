@@ -54,7 +54,26 @@ class LogoutView(APIView):
         request.user.auth_token.delete()
         return Response({"message": "Logged out successfully"}, status=status.HTTP_200_OK)"""
 
+class SignUpView(APIView):
+    permission_classes = [AllowAny]
 
+    def post(self, request):
+        email = request.data.get('email')
+        password = request.data.get('password')
+
+        if not email or not password:
+            return Response({"error": "email and password are required"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if User.objects.filter(email=email).exists():
+            return Response({"error": "email already exists"}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = User.objects.create_user(email=email, password=password)
+        refresh = RefreshToken.for_user(user)
+
+        return Response({
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        }, status=status.HTTP_201_CREATED)
 
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated] 
