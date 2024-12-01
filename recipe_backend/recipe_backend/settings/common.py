@@ -139,7 +139,8 @@ REST_FRAMEWORK = {
     # Other settings...
 
      'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
     ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',  # Default permission
@@ -154,10 +155,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKENS': True,
-    'BLACKLIST_AFTER_ROTATION': True,
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),   # How long an access token is valid
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),     # How long a refresh token is valid
+    'ROTATE_REFRESH_TOKENS': True,                  # Whether to issue a new refresh token during refresh
+    'BLACKLIST_AFTER_ROTATION': True,               # Whether to blacklist old refresh tokens
 }
 
 AUTH_USER_MODEL = 'user.User'

@@ -24,11 +24,13 @@ from django.conf import settings
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework.schemas import get_schema_view as get_restframe_work_schema
+
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
     TokenVerifyView,
 )
+
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -58,7 +60,8 @@ urlpatterns = [
     path('api/v1/redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
     #  Token Authentication
+    path('api/v1/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/v1/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/v1/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
