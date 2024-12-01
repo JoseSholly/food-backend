@@ -4,6 +4,9 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
 from .managers import CustomUserManager
+from datetime import timedelta
+from django.utils.timezone import now
+import uuid
 
 
 GENDER = [
@@ -57,3 +60,17 @@ class User(AbstractUser):
     @property
     def full_name(self):
         return self.get_full_name()
+
+
+
+class PasswordResetToken(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="password_reset_token")
+    token = models.UUIDField(default=uuid.uuid4, editable=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_used = models.BooleanField(default=False)
+
+    class Meta:
+        unique_together = ('user', 'is_used')
+
+    def is_valid(self):
+        return now() - self.created_at < timedelta(hours=1)  # Token valid for 1 hour
