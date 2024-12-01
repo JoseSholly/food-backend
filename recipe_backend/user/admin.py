@@ -1,20 +1,35 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
-from .models import User
-# Register your models here.
+from django.contrib.auth import get_user_model
+from django.contrib.auth import admin as auth_admin
+from .forms import CustomUserChangeForm, CustomUserCreationForm
+from django.utils.translation import gettext_lazy as _
 
+User = get_user_model()
 
-class CustomUserAdmin(UserAdmin):
-    """
-    Custom admin configuration for CustomUser model
-    """
-    model = User
-    list_display = [
-        'email', 'username', 'first_name', 
-        'last_name', 'is_staff', 'is_recipe_creator'
-    ]
-    fieldsets = UserAdmin.fieldsets + (
-        (None, {'fields': ('bio', 'profile_picture', 'date_of_birth', 'is_recipe_creator')}),
-    )
+@admin.register(User)
+class CustomUserAdmin(auth_admin.UserAdmin):
+    form = CustomUserChangeForm
+    add_form = CustomUserCreationForm
+    list_display = ['email', 'username', 'first_name', 'last_name', 'is_staff', 'is_recipe_creator']
+    search_fields = ('email', 'first_name', 'last_name')
 
-admin.site.register(User, CustomUserAdmin)
+    fieldsets = (
+        (None, {'fields': ('email', 'password')}),
+        (_("Personal Info"), {"fields": ("username","first_name", "last_name", "bio", "gender","date_of_birth", "profile_picture", "is_recipe_creator")}),
+        (
+            _("Permissions"),
+            {
+                "fields": (
+                    "is_active",
+                    "is_staff",
+                    "is_superuser",
+                    "groups",
+                    "user_permissions",
+                ),
+            },
+        ),
+        (_("Important dates"), {"fields": ("last_login", "date_joined")}),
+        
+        
+        )
+    
