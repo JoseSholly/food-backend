@@ -25,6 +25,12 @@ class CustomUserChangeForm(UserChangeForm):
         help_text=_("Health conditions of user"),
     )
 
+    lifestyle_preferences = forms.MultipleChoiceField(
+        choices=HealthConditions.choices,
+        widget=forms.CheckboxSelectMultiple,
+        required=False,
+        help_text=_("Health conditions of user"),
+    )
     class Meta:
         model = User
         fields = ['email', 'username', 'first_name', 'last_name', 'bio', 'profile_picture', 'date_of_birth', 'is_recipe_creator']
@@ -37,6 +43,9 @@ class CustomUserChangeForm(UserChangeForm):
     
     def clean_nutritional_goals(self):
         return self.cleaned_data.get("nutritional_goals", [])
+    
+    def clean_lifestyle_preferences(self):
+        return self.cleaned_data.get("lifestyle_preferences", [])
 
 class CustomUserCreationForm(UserCreationForm):
     dietary_restrictions = forms.MultipleChoiceField(
@@ -59,6 +68,13 @@ class CustomUserCreationForm(UserCreationForm):
         required=False,
         help_text=_("Health conditions of user"),
     )
+
+    lifestyle_preferences = forms.MultipleChoiceField(
+        choices=HealthConditions.choices,
+        widget=forms.CheckboxSelectMultiple,
+        required=False,
+        help_text=_("Health conditions of user"),
+    )
     class Meta:
         model = User
         fields = ['email', 'username', 'first_name', 'last_name', 'bio', 'profile_picture', 'date_of_birth', 'is_recipe_creator']
@@ -71,4 +87,7 @@ class CustomUserCreationForm(UserCreationForm):
     
     def clean_nutritional_goals(self):
         return self.cleaned_data.get("nutritional_goals", [])
+    
+    def clean_lifestyle_preferences(self):
+        return self.cleaned_data.get("lifestyle_preferences", [])
 

@@ -40,3 +40,18 @@ class NutritionalGoals(models.TextChoices):
 
 def validate_nutritional_goals(value):
     validate_choices(value, [choice.value for choice in NutritionalGoals])
+
+class LifestylePreferences(models.TextChoices):
+    BUSY_SCHEDULE = "Busy Schedule", _("Busy Schedule")
+    BEGINNER_COOKING_SKILLS = "Beginner Cooking Skills", _("Beginner Cooking Skills")
+    INTERMEDIATE_COOKING_SKILLS = (
+        "Intermediate Cooking Skills",
+        _("Intermediate Cooking Skills"),
+    )
+    ADVANCED_COOKING_SKILLS = "Advanced Cooking Skills", _("Advanced Cooking Skills")
+    SPICY_FOOD = "Spicy Food", _("Spicy Food")
+    SWEET_FOOD = "Sweet Food", _("Sweet Food")
+    SAVORY_FOOD = "Savory Food", _("Savory Food")
+
+def validate_lifestyle_preferences(value):
+    validate_choices(value, [choice.value for choice in LifestylePreferences])
