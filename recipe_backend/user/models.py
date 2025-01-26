@@ -82,7 +82,10 @@ class User(AbstractUser):
         help_text=_("Weight target set by user"),
     )
     streak = models.PositiveIntegerField(
-        default=0, help_text=_("User streak")
+        null=True,
+        blank=True,
+        default=0, 
+        help_text=_("User streak")
     )
     dietary_restrictions = models.JSONField(
         default=list,
