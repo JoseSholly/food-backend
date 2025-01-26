@@ -19,7 +19,7 @@ class WeightGoalInline(admin.StackedInline):
 class CustomUserAdmin(auth_admin.UserAdmin):
     form = CustomUserChangeForm
     add_form = CustomUserCreationForm
-    list_display = ['email', 'username', 'first_name', 'last_name', 'is_staff', 'is_recipe_creator']
+    list_display = ['email', 'first_name', 'last_name', 'is_staff', 'is_recipe_creator']
     search_fields = ('email', 'first_name', 'last_name')
 
     fieldsets = (
@@ -28,7 +28,6 @@ class CustomUserAdmin(auth_admin.UserAdmin):
             _("Personal Info"),
             {
                 "fields": (
-                    "username",
                     "first_name",
                     "last_name",
                     "bio",
