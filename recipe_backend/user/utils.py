@@ -7,10 +7,6 @@ GENDER_CHOICES = [
     ("Female", "Female"),
 ]
 
-def validate_dietary_restrictions(value):
-    validate_choices(value, [choice.value for choice in DietaryRestrictions])
-
-
 def validate_choices(value, choices):
     if not all(item in choices for item in value):
         raise ValidationError(_("Invalid choice: %(value)s"), params={"value": value})
@@ -23,26 +19,14 @@ class DietaryRestrictions(models.TextChoices):
     HALAL = "Halal", _("Halal")
     KOSHER = "Kosher", _("Kosher")
 
-HEALTH_CONDITIONS_CHOICES = [
-    ("Diabetes", "Diabetes"),
-    ("High Blood Pressure", "High Blood Pressure"),
-    ("High Cholesterol", "High Cholesterol"),
-    ("Food Allergies", "Food Allergies"),
-]
+def validate_dietary_restrictions(value):
+    validate_choices(value, [choice.value for choice in DietaryRestrictions])
 
-NUTRITIONAL_GOALS_CHOICES = [
-    ("Weight Loss", "Weight Loss"),
-    ("Weight Gain", "Weight Gain"),
-    ("Muscle Building", "Muscle Building"),
-    ("Endurance Training", "Endurance Training"),
-]
+class HealthConditions(models.TextChoices):
+    DIABETES = "Diabetes", _("Diabetes")
+    HIGH_BLOOD_PRESSURE = "High Blood Pressure", _("High Blood Pressure")
+    HIGH_CHOLESTEROL = "High Cholesterol", _("High Cholesterol")
+    FOOD_ALLERGIES = "Food Allergies", _("Food Allergies")
 
-LIFESTYLE_PREFERENCES_CHOICES = [
-    ("Busy Schedule", "Busy Schedule"),
-    ("Beginner Cooking Skills", "Beginner Cooking Skills"),
-    ("Intermediate Cooking Skills", "Intermediate Cooking Skills"),
-    ("Advanced Cooking Skills", "Advanced Cooking Skills"),
-    ("Spicy Food", "Spicy Food"),
-    ("Sweet Food", "Sweet Food"),
-    ("Savory Food", "Savory Food"),
-]
+def validate_health_conditions(value):
+    validate_choices(value, [choice.value for choice in HealthConditions])

@@ -7,7 +7,7 @@ from .managers import CustomUserManager
 from datetime import timedelta
 from django.utils.timezone import now
 import uuid
-from .utils import GENDER_CHOICES, validate_dietary_restrictions
+from .utils import GENDER_CHOICES, validate_dietary_restrictions, validate_health_conditions
 
 
 class User(AbstractUser):
@@ -90,7 +90,12 @@ class User(AbstractUser):
         help_text=_("Dietary restrictions of user"),
         validators=[validate_dietary_restrictions],
     )
-    health_conditions = models.JSONField(default=list, blank=True, help_text=_("Health conditions of user"))
+    health_conditions = models.JSONField(
+        default=list,
+        blank=True,
+        help_text=_("Health conditions of user"),
+        validators=[validate_health_conditions],
+    )
     nutritional_goals = models.JSONField(default=list, blank=True, help_text=_("Nutritional goals of user"))
     lifestyle_preferences = models.JSONField(default=list, blank=True, help_text=_("Lifestyle preferences of user"))
     has_completed_profile = models.BooleanField(default=False, help_text=_("Designates if user has completed profile"))
