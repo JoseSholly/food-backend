@@ -30,3 +30,13 @@ class HealthConditions(models.TextChoices):
 
 def validate_health_conditions(value):
     validate_choices(value, [choice.value for choice in HealthConditions])
+
+
+class NutritionalGoals(models.TextChoices):
+    WEIGHT_LOSS = "Weight Loss", _("Weight Loss")
+    WEIGHT_GAIN = "Weight Gain", _("Weight Gain")
+    MUSCLE_BUILDING = "Muscle Building", _("Muscle Building")
+    ENDURANCE_TRAINING = "Endurance Training", _("Endurance Training")
+
+def validate_nutritional_goals(value):
+    validate_choices(value, [choice.value for choice in NutritionalGoals])
